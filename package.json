@@ -1,6 +1,6 @@
 {
   "name": "parsetrace",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Minimal library for parsing and printing node stacktrace",
   "main": "lib/index.js",
   "scripts": {
@@ -32,6 +32,5 @@
   "bugs": {
     "url": "https://github.com/floatdrop/node-parsetrace/issues"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
