@@ -19,14 +19,15 @@ try {
 
 ## API
 
-### parsetrace(error, [options])
+### parsetrace(error, [options], [callback])
 
 Parses stack trace from `Error`, `string` or `object`, that have `.stack` and `.message` property.
 
+If callback is passed - all source code fetching will be async and error will be passed to it (even if `strict` is `true`).
+
 _Options_:
 
- * `sources` - fetch source code from files, that are mentioned in stacktrace. If file can not be found or readed
-- sources will not be fetched silently (unless you enabled `strict` option) (default: `false`)
+ * `sources` - fetch source code from files, that are mentioned in stacktrace. If file can not be found or readed - sources will be fetched silently (unless you enabled `strict` option) (default: `false`)
  * `strict` - throws errors, while parsing stacktrace and fetching source code (default: `false`)
  * `contextSize` - number of lines before and after the error line (default: `3`)
 
