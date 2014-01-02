@@ -12,7 +12,7 @@ module.exports = {
         '    at node.js:901:3'
     ].join('\n'),
     answers: {
-        funcitons: [
+        functions: [
             'Object.<anonymous>',
             'Module._compile',
             'Object.Module._extensions..js',
@@ -20,7 +20,7 @@ module.exports = {
             'Function.Module._load',
             'Function.Module.runMain',
             'startup',
-            'node.js'
+            undefined
         ],
         lines: [1, 456, 474, 356, 312, 497, 119, 901],
         columns: [69, 26, 10, 32, 12, 10, 16, 3],

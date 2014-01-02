@@ -31,5 +31,7 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/floatdrop/node-parsetrace/issues"
+  },
+  "dependencies": {
   }
 }
