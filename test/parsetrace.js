@@ -7,12 +7,12 @@ var assert = require('power-assert');
 
 describe('parsetrace', function () {
     it('should parse error message', function () {
-        var trace = parsetrace(error.stack('simple'));
+        var trace = parsetrace(error('simple')).object();
         assert(trace.error === 'simple.js', 'Error message is corrupted');
     });
 
     it('should parse stack frames', function () {
-        var trace = parsetrace(error.stack('simple'));
+        var trace = parsetrace(error('simple')).object();
         assert(trace.frames);
         assert(trace.frames.length === 8);
     });

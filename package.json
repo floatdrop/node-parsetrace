@@ -4,7 +4,8 @@
   "description": "Minimal library for parsing and printing node stacktrace",
   "main": "lib/index.js",
   "scripts": {
-    "test": "istanbul cover _mocha --report lcovonly -- test/*.js --reporter list --timeout 100000"
+    "test": "mocha --require ./enable-power-assert.js test/*.js --reporter list",
+    "coverate": "istanbul cover _mocha --report lcovonly -- test/*.js --reporter list --timeout 100000"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
     "istanbul": "~0.1.44",
     "power-assert": "~0.3.1",
     "shelljs": "~0.2.6",
-    "gulp": "~3.2.2"
+    "gulp": "~3.2.2",
+    "espower-loader": "~0.3.1"
   },
   "keywords": [
     "stack",
