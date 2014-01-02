@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git://github.com/floatdrop/node-parsetrace.git"
   },
+  "devDependencies": {
+    "mocha": "~1.15.1",
+    "coveralls": "~2.6.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "istanbul": "~0.1.44"
+  },
   "keywords": [
     "stack",
     "trace",
