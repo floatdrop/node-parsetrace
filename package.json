@@ -2,7 +2,7 @@
   "name": "parsetrace",
   "version": "0.0.1",
   "description": "Minimal library for parsing and printing node stacktrace",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "istanbul cover _mocha --report lcovonly -- test/*.js --reporter list --timeout 100000"
   },
@@ -15,7 +15,9 @@
     "coveralls": "~2.6.0",
     "mocha-lcov-reporter": "0.0.1",
     "istanbul": "~0.1.44",
-    "power-assert": "~0.3.1"
+    "power-assert": "~0.3.1",
+    "shelljs": "~0.2.6",
+    "gulp": "~3.2.2"
   },
   "keywords": [
     "stack",
