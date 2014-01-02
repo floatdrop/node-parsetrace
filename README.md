@@ -37,19 +37,19 @@ __Returns__ `Object` with methods described below:
 
 ```json
 {
-    'error': 'My cool error',
-    'frames': [
+    "error": "My cool error",
+    "frames": [
         {
-            line: 4,
-            column: 11,
-            function: 'Object.<anonymous>',
-            file: '/full/path/to/file.js',
-            source: {
-                2: { code: '' },
-                3: { code: 'try {' },
-                4: { code: '    throw new Error('My cool error');' },
-                5: { code: '} catch (e) {' },
-                6: { code: '    console.log(parsetrace(e).json());' }
+            "line": 4,
+            "column": 11,
+            "function": "Object.<anonymous>",
+            "file": "/full/path/to/file.js",
+            "source": {
+                2: { "code": "" },
+                3: { "code": "try {" },
+                4: { "code": "    throw new Error('My cool error');" },
+                5: { "code": "} catch (e) {" },
+                6: { "code": "    console.log(parsetrace(e).json());" }
             }
         }
     ]
