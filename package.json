@@ -1,0 +1,24 @@
+{
+  "name": "parsetrace",
+  "version": "0.0.0",
+  "description": "Minimal library for parsing and printing node stacktrace",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha --report lcovonly -- test/*.js --reporter list --timeout 100000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/floatdrop/node-parsetrace.git"
+  },
+  "keywords": [
+    "stack",
+    "trace",
+    "source",
+    "parse"
+  ],
+  "author": "Vsevolod Strukchinsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floatdrop/node-parsetrace/issues"
+  }
+}
