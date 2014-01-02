@@ -78,4 +78,19 @@ describe('parsetrace of', function () {
             });
         });
     });
+
+    describe('source.mock', function () {
+        before(function () {
+            this.trace = parsetrace(error('source.mock'));
+            this.object = this.trace.object();
+            this.answers = error('source.mock').answers;
+        });
+
+        it('should contain parsed sources', function () {
+            assert.ok(this.object.frames[0].source);
+            var parsedSource = this.object.frames[0].source;
+            var answer = this.answers.source;
+            assert.deepEqual(parsedSource, answer);
+        });
+    });
 });
