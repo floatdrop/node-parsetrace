@@ -2,8 +2,8 @@
 Minimal library for parsing and printing node stacktrace
 
 
-[npm-url]: https://npmjs.org/package/node-parsetrace
-[npm-image]: https://badge.fury.io/js/node-parsetrace.png
+[npm-url]: https://npmjs.org/package/parsetrace
+[npm-image]: https://badge.fury.io/js/parsetrace.png
 
 [travis-url]: http://travis-ci.org/floatdrop/node-parsetrace
 [travis-image]: https://secure.travis-ci.org/floatdrop/node-parsetrace.png?branch=master
