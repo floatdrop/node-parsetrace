@@ -2,7 +2,7 @@ module.exports = {
     message: 'simple.js',
     stack: [
         'Error: simple.js',
-        '    at Object.<anonymous> (/Users/floatdrop/node-parsetrace/test/errors/simple.js:1:69)',
+        '    at Object.<anonymous> (./test/errors/simple.js:1:69)',
         '    at Module._compile (module.js:456:26)',
         '    at Object.Module._extensions..js (module.js:474:10)',
         '    at Module.load (module.js:356:32)',
@@ -25,7 +25,7 @@ module.exports = {
         lines: [1, 456, 474, 356, 312, 497, 119, 901],
         columns: [69, 26, 10, 32, 12, 10, 16, 3],
         files: [
-            '/Users/floatdrop/node-parsetrace/test/errors/simple.js',
+            './test/errors/simple.js',
             'module.js',
             'module.js',
             'module.js',
