@@ -1,5 +1,5 @@
 # node-parsetrace [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
-Minimal library for parsing and printing node stacktrace
+Minimal library for parsing and printing node stacktrace. Mostly for use in [express-error-with-sources](https://github.com/floatdrop/express-error-with-sources).
 
 ## Installation
 
