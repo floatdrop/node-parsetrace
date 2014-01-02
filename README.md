@@ -25,27 +25,27 @@ Parses stack trace from `Error`, `string` or `object`, that have `.stack` and `.
 
 If callback is passed - all source code fetching will be async and error will be passed to it (even if `strict` is `true`).
 
-_Options_:
+__Options__:
 
  * `sources` - fetch source code from files, that are mentioned in stacktrace. If file can not be found or readed - sources will be fetched silently (unless you enabled `strict` option) (default: `false`)
  * `strict` - throws errors, while parsing stacktrace and fetching source code (default: `false`)
  * `contextSize` - number of lines before and after the error line (default: `3`)
 
-_Returns_ `Object` with methods described below:
+__Returns__ `Object` with methods described below:
 
 ### json()
 
-Returns stacktrace as Json string
+__Returns__ stacktrace as Json string
 
 ### object()
 
-Returns stacktrace as Object
+__Returns__ stacktrace as Object
 
 ### toString([options])
 
-Returns stacktrace as NodeJS formatted stacktracke string.
+__Returns__ stacktrace as NodeJS formatted stacktracke string.
 
-_Options_:
+__Options__:
 
  * `excludeSources` - if stacktrace was parsed with sources, this will exclude them from output.
 
