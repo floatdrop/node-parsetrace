@@ -1,0 +1,38 @@
+module.exports = {
+    message: 'simple.js',
+    stack: [
+        'Error: simple.js',
+        '    at Object.<anonymous> (/Users/floatdrop/node-parsetrace/test/errors/simple.js:1:69)',
+        '    at Module._compile (module.js:456:26)',
+        '    at Object.Module._extensions..js (module.js:474:10)',
+        '    at Module.load (module.js:356:32)',
+        '    at Function.Module._load (module.js:312:12)',
+        '    at Function.Module.runMain (module.js:497:10)',
+        '    at startup (node.js:119:16)',
+        '    at node.js:901:3'
+    ].join('\n'),
+    answers: {
+        funcitons: [
+            'Object.<anonymous>',
+            'Module._compile',
+            'Object.Module._extensions..js',
+            'Module.load',
+            'Function.Module._load',
+            'Function.Module.runMain',
+            'startup',
+            'node.js'
+        ],
+        lines: [1, 456, 474, 356, 312, 497, 119, 901],
+        columns: [69, 26, 10, 32, 12, 10, 16, 3],
+        files: [
+            '/Users/floatdrop/node-parsetrace/test/errors/simple.js',
+            'module.js',
+            'module.js',
+            'module.js',
+            'module.js',
+            'module.js',
+            'node.js',
+            'node.js'
+        ]
+    }
+};

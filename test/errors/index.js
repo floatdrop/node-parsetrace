@@ -2,7 +2,7 @@
 
 module.exports = function (app) {
     try {
-        require('./' + app);
+        return require('./' + app);
     } catch (e) {
         return e;
     }
