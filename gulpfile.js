@@ -1,11 +1,15 @@
 'use strict';
 
 var gulp = require('gulp');
-var shelljs = require('shelljs');
+var mocha = require('gulp-mocha')
 
 gulp.task('watch', function () {
     gulp.watch(['test/**', 'lib/**'], function () {
-        shelljs.exec('npm test');
+        gulp.src(['test/*.js'])
+            .pipe(mocha({ reporter: 'list' }))
+            .on('error', function() {
+                // Too Bad
+            });
     });
 });
 
