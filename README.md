@@ -43,11 +43,12 @@ __Returns__ stacktrace as Object
 
 ### toString([options])
 
-__Returns__ stacktrace as NodeJS formatted stacktracke string.
-
 __Options__:
 
- * `excludeSources` - if stacktrace was parsed with sources, this will exclude them from output.
+ * `excludeSources` - if stacktrace was parsed with sources, this will exclude them from output (default: `false`)
+
+__Returns__ stacktrace as NodeJS formatted stacktracke string.
+
 
 [npm-url]: https://npmjs.org/package/parsetrace
 [npm-image]: https://badge.fury.io/js/parsetrace.png
