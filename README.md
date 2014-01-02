@@ -13,30 +13,40 @@ var parsetrace = require('parsetrace');
 try {
     throw new Error('My cool error');
 } catch (e) {
-    console.log(parsetrace(e, { fetchSources: true }).json());
+    console.log(parsetrace(e, { sources: true }).json());
 }
-
-/*
-{
-    'error': 'My cool error',
-    'frames': [
-        {
-            line: 4,
-            column: 11,
-            function: 'Object.<anonymous>',
-            file: '/full/path/to/file.js',
-            source: {
-                2: { code: '' },
-                3: { code: 'try {' },
-                4: { code: '    throw new Error('My cool error');' },
-                5: { code: '} catch (e) {' },
-                6: { code: '    console.log(parsetrace(e).json());' }
-            }
-        }
-    ]
-}
-*/
 ```
+
+## API
+
+### parsetrace(error, [options])
+
+Parses stack trace from `Error`, `string` or `object`, that have `.stack` and `.message` property.
+
+_Options_:
+
+ * `sources` - fetch source code from files, that are mentioned in stacktrace. If file can not be found or readed
+- sources will not be fetched silently (unless you enabled `strict` option) (default: `false`)
+ * `strict` - throws errors, while parsing stacktrace and fetching source code (default: `false`)
+ * `contextSize` - number of lines before and after the error line (default: `3`)
+
+_Returns_ `Object` with methods described below:
+
+### json()
+
+Returns stacktrace as Json string
+
+### object()
+
+Returns stacktrace as Object
+
+### toString([options])
+
+Returns stacktrace as NodeJS formatted stacktracke string.
+
+_Options_:
+
+ * `excludeSources` - if stacktrace was parsed with sources, this will exclude them from output.
 
 [npm-url]: https://npmjs.org/package/parsetrace
 [npm-image]: https://badge.fury.io/js/parsetrace.png
