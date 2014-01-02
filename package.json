@@ -32,5 +32,7 @@
   "bugs": {
     "url": "https://github.com/floatdrop/node-parsetrace/issues"
   },
-  "dependencies": {}
+  "dependencies": {
+    "printf": "~0.1.2"
+  }
 }

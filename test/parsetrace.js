@@ -72,6 +72,10 @@ describe('parsetrace of', function () {
             it('after toString should contain simple.js source line', function () {
                 assert(this.trace.toString().indexOf(sourceLine) !== -1);
             });
+
+            it('should be preppended by 11 spaces', function () {
+                assert(this.trace.toString().indexOf('           1:') !== -1);
+            });
         });
     });
 });
