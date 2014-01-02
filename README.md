@@ -25,6 +25,12 @@ Parses stack trace from `Error`, `string` or `object`, that have `.stack` and `.
 
 If callback is passed - all source code fetching will be async and error will be passed to it (even if `strict` is `true`).
 
+```javascript
+parsetrace(err, function(error, trace) {
+    console.log(trace.toString());
+});
+```
+
 __Options__:
 
  * `sources` - fetch source code from files, that are mentioned in stacktrace. If file can not be found or readed - sources will be fetched silently (unless you enabled `strict` option) (default: `false`)
