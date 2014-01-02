@@ -76,6 +76,11 @@ describe('parsetrace of', function () {
             it('should be preppended by 11 spaces', function () {
                 assert(this.trace.toString().indexOf('           1:') !== -1);
             });
+
+            it('should skip sources if options say so', function () {
+                var string = this.trace.toString({ excludeSources: true});
+                assert(string.indexOf('           1:') === -1);
+            });
         });
     });
 
