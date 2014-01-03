@@ -1,13 +1,13 @@
 'use strict';
 
 var gulp = require('gulp');
-var mocha = require('gulp-mocha')
+var mocha = require('gulp-mocha');
 
 gulp.task('watch', function () {
     gulp.watch(['test/**', 'lib/**'], function () {
         gulp.src(['test/*.js'])
             .pipe(mocha({ reporter: 'list' }))
-            .on('error', function() {
+            .on('error', function () {
                 // Too Bad
             });
     });
