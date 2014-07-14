@@ -35,6 +35,6 @@
     "url": "https://github.com/floatdrop/node-parsetrace/issues"
   },
   "dependencies": {
-    "printf": "~0.1.2"
+    "pff": "~0.2.0"
   }
 }
